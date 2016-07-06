@@ -22,6 +22,69 @@
     padding: 8px 44px 8px 44px;
     width: 100%; }
 
+@charset "UTF-8";
+.Comment {
+  /*
+     * El selector de hijo, es necesario para aumentar la especifidad
+     */ }
+  .Comment .header {
+    padding: 10px; }
+    .Comment .header h3 {
+      color: #30697d; }
+  .Comment .start {
+    padding: 10px;
+    border-top: 1px #bdc3c7 solid;
+    border-bottom: 1px #bdc3c7 solid; }
+    .Comment .start .vote {
+      color: #e79423;
+      margin: 0;
+      padding: 0; }
+      .Comment .start .vote span {
+        font-size: 0.6em; }
+  .Comment form {
+    margin-top: 12px;
+    padding: 10px;
+    text-align: center; }
+    .Comment form label {
+      text-transform: uppercase;
+      font-weight: bold;
+      float: left; }
+    .Comment form textarea {
+      border: 1px #bdc3c7 solid; }
+    .Comment form button {
+      background-color: #f1cb2f;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      padding: 8px 44px 8px 44px;
+      margin-top: 24px; }
+  .Comment .ec-stars-wrapper {
+    /* Espacio entre los inline-block (los hijos, los `a`)
+    	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+    font-size: 0;
+    /* Podríamos quitarlo,
+    		pero de esta manera (siempre que no le demos padding),
+    		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+    		también se esté haciendo hover a alguna estrella */
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    text-align: center; }
+  .Comment .ec-stars-wrapper a {
+    color: #e79423 !important;
+    padding: 4px;
+    text-decoration: none;
+    display: inline-block;
+    /* Volver a dar tamaño al texto */
+    font-size: 42px;
+    font-size: 3rem;
+    color: #888; }
+  .Comment .ec-stars-wrapper:hover a {
+    color: #2782e4; }
+  .Comment .ec-stars-wrapper > a:hover ~ a {
+    color: #888; }
+
 @media (min-width: 680px) {
   .bigModal {
     top: 0px !important;
@@ -211,6 +274,15 @@
       padding: 8px 24px 8px 24px;
       margin-top: 12px; }
 
+.Photos img {
+  width: 100%;
+  height: 160px; }
+
+.Photos p {
+  padding: 0;
+  margin: 0; }
+
+
 .Redeem .content {
   border-bottom: 1px #bdc3c7 solid; }
   .Redeem .content div {
@@ -372,11 +444,125 @@
 .ResultsView .bold {
   font-weight: bold; }
 
+.Reviews .header {
+  padding: 10px; }
+  .Reviews .header h3, .Reviews .header button {
+    display: inline-block; }
+  .Reviews .header h3 {
+    color: #30697d; }
+  .Reviews .header button {
+    text-align: center;
+    background-color: #f1cb2f;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    padding: 8px 34px 8px 34px;
+    float: right; }
+
+.Reviews .comments {
+  padding-bottom: 30px;
+  border-bottom: 1px #bdc3c7 solid; }
+  .Reviews .comments div {
+    display: inline-block !important; }
+  .Reviews .comments img {
+    width: 80px; }
+  .Reviews .comments .info {
+    width: 72%;
+    position: relative;
+    top: 18px; }
+  .Reviews .comments h4, .Reviews .comments p {
+    margin: 0;
+    padding: 0; }
+  .Reviews .comments h4 {
+    font-size: 0.8em; }
+  .Reviews .comments .date {
+    color: #dd3d34; }
+
 .screenView {
   background-image: url("../img/bckg_no_results.png");
   background-size: cover; }
   .screenView img {
     width: 100%; }
+
+
+.Signin .logo img {
+  width: 100%; }
+
+.Signin .accion {
+  text-align: center; }
+  .Signin .accion img {
+    width: 38px; }
+  .Signin .accion .facebook {
+    background-color: #0070ba;
+    color: #fff;
+    border: none;
+    padding: 8px 24px 8px 24px;
+    margin-top: 12px;
+    width: 90%;
+    font-size: 1.3em; }
+    .Signin .accion .facebook span {
+      position: relative;
+      top: -14px;
+      left: 8px; }
+  .Signin .accion .google {
+    background-color: #6f6f6f;
+    color: #fff;
+    border: none;
+    padding: 8px 24px 8px 24px;
+    margin-top: 18px;
+    width: 90%;
+    font-size: 1.3em; }
+    .Signin .accion .google span {
+      position: relative;
+      top: -14px;
+      left: 8px; }
+
+.Signin .text-divider {
+  width: 100%;
+  max-width: 994px;
+  margin: 25px auto;
+  position: relative;
+  text-align: center; }
+  .Signin .text-divider h2 {
+    font-size: 1.3em; }
+  .Signin .text-divider:before {
+    content: '';
+    height: 1px;
+    width: 45%;
+    position: absolute;
+    background-color: #C8C8C8;
+    left: 0;
+    top: 50%; }
+  .Signin .text-divider:after {
+    content: '';
+    height: 1px;
+    width: 45%;
+    position: absolute;
+    background-color: #C8C8C8;
+    right: 0;
+    top: 50%; }
+
+.Signin .frm-login {
+  padding: 14px;
+  text-align: center !important; }
+  .Signin .frm-login input {
+    text-transform: uppercase;
+    border: 1px #bdc3c7 solid;
+    width: 100%;
+    text-align: center !important;
+    padding: 0;
+    margin: 0; }
+
+.Signin button {
+  text-align: center;
+  background-color: #f1cb2f;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  padding: 8px 34px 8px 34px;
+  margin-top: 34px; }
 
 .popoverView {
   background-color: #ede9ea !important;

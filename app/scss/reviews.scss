@@ -1,0 +1,46 @@
+.Reviews{
+  .header{
+    padding: 10px;
+    h3,button{
+      display: inline-block;
+    }
+    h3{
+      color: #30697d;
+    }
+    button{
+      text-align: center;
+      background-color: #f1cb2f;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      padding: 8px 34px 8px 34px;
+      float: right;
+    }
+  }
+
+  .comments{
+    padding-bottom: 30px;
+    border-bottom: 1px #bdc3c7 solid;
+    div{
+      display: inline-block !important;
+    }
+    img{
+      width: 80px;
+    }
+    .info{
+      width: 72%;
+      position: relative;
+      top: 18px;
+    }
+    h4,p{
+      margin: 0;padding: 0;
+    }
+    h4{
+      font-size: 0.8em;
+    }
+    .date{
+      color:#dd3d34;
+    }
+  }
+}

@@ -137,6 +137,60 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
                     templateUrl: "templates/add-restaurant.html"
                 }
             }
+        })
+        .state('app.photos', {
+            url: "/photos",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/photos.html"
+                }
+            }
+        })
+        .state('app.reviews', {
+            url: "/reviews",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/reviews.html"
+                }
+            }
+        })
+        .state('app.comment', {
+            url: "/comment",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/comment.html"
+                }
+            }
+        })
+        .state('app.signin', {
+            url: "/signin",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/signin.html"
+                }
+            }
+        })
+        .state('app.signin-mail', {
+            url: "/signin-mail",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/signin-mail.html"
+                }
+            }
+        })
+        .state('app.recovery-pass', {
+            url: "/recovery-pass",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/recovery-pass.html"
+                }
+            }
         });
 
 
@@ -159,6 +213,6 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
 
     $urlRouterProvider.otherwise(function ($injector, $location) {
         var $state = $injector.get("$state");
-        $state.go("app.add-restaurant");
+        $state.go("app.recovery-pass");
     });
 }]);

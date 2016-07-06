@@ -1,0 +1,80 @@
+.Comment{
+  .header{
+    padding: 10px;
+    h3{
+      color: #30697d;
+    }
+  }
+
+  .start{
+    padding: 10px;
+    border-top: 1px #bdc3c7 solid;
+    border-bottom: 1px #bdc3c7 solid;
+
+    .vote{
+      color: #e79423;
+      margin: 0;padding: 0;
+      span{
+        font-size: 0.6em;
+      }
+    }
+  }
+
+  form{
+    margin-top: 12px;
+    padding: 10px;
+    text-align: center;
+    label{
+      text-transform: uppercase;
+      font-weight: bold;
+      float: left;
+    }
+    textarea{
+      border: 1px #bdc3c7 solid;
+    }
+    button{
+      background-color: #f1cb2f;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      padding: 8px 44px 8px 44px;
+      margin-top: 24px;
+    }
+  }
+
+  .ec-stars-wrapper {
+    	/* Espacio entre los inline-block (los hijos, los `a`)
+    	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+    	font-size: 0;
+    	/* Podríamos quitarlo,
+    		pero de esta manera (siempre que no le demos padding),
+    		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+    		también se esté haciendo hover a alguna estrella */
+    	display: inline-block;
+      width: 100%;
+      padding: 12px;
+      text-align: center;
+    }
+    .ec-stars-wrapper a {
+      color: #e79423 !important;
+      padding: 4px;
+    	text-decoration: none;
+    	display: inline-block;
+    	/* Volver a dar tamaño al texto */
+    	font-size: 42px;
+    	font-size: 3rem;
+
+    	color: #888;
+    }
+
+    .ec-stars-wrapper:hover a {
+    	color: rgb(39, 130, 228);
+    }
+    /*
+     * El selector de hijo, es necesario para aumentar la especifidad
+     */
+    .ec-stars-wrapper > a:hover ~ a {
+    	color: #888;
+    }
+}

@@ -1,0 +1,96 @@
+.Signin{
+
+  .logo{
+    img{
+      width: 100%;
+    }
+  }
+
+  .accion{
+    text-align: center;
+    img{
+      width: 38px;
+    }
+    .facebook{
+      background-color: #0070ba;
+      color: #fff;
+      border: none;
+      padding: 8px 24px 8px 24px;
+      margin-top: 12px;
+      width: 90%;
+      font-size: 1.3em;
+      span{
+        position: relative;;
+        top: -14px;
+        left: 8px;
+      }
+    }
+    .google{
+      background-color: #6f6f6f;
+      color: #fff;
+      border: none;
+      padding: 8px 24px 8px 24px;
+      margin-top: 18px;
+      width: 90%;
+      font-size: 1.3em;
+      span{
+        position: relative;;
+        top: -14px;
+        left: 8px;
+      }
+    }
+  }
+
+  .text-divider{
+    width: 100%;
+    max-width: 994px;
+    margin: 25px auto;
+    position: relative;
+    text-align: center;
+    h2{
+      font-size: 1.3em;
+    }
+    &:before {
+      content: '';
+      height: 1px;
+      width: 45%;
+      position: absolute;
+      background-color: #C8C8C8;
+      left: 0;
+      top: 50%;
+      }
+    &:after {
+      content: '';
+      height: 1px;
+      width: 45%;
+      position: absolute;
+      background-color: #C8C8C8;
+      right: 0;
+      top: 50%;
+    }
+  }
+
+
+
+  .frm-login{
+    padding: 14px;
+    text-align: center !important;
+    input{
+      text-transform: uppercase;
+      border: 1px #bdc3c7 solid;
+      width: 100%;
+      text-align: center !important;
+      padding: 0;margin: 0;
+    }
+  }
+  button{
+    text-align: center;
+    background-color: #f1cb2f;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    padding: 8px 34px 8px 34px;
+    margin-top: 34px;
+  }
+}
