@@ -1,0 +1,27 @@
+.Notresults{
+  background-image: url("../img/bckg_no_results.png");
+  background-size: cover;
+  img{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .info{
+    width: 60%;
+    margin: 0 auto;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-align: center;
+
+    button{
+      background-color: #f1cb2f;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      padding: 8px 24px 8px 24px;
+      margin-top: 12px;
+    }
+  }
+}

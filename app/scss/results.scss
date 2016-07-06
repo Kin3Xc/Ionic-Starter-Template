@@ -1,0 +1,39 @@
+.ResultsView{
+    .list{
+      a{
+        width: 100% !important;
+        div{
+          display: inline-block;
+        }
+        .right{
+          float: right;
+        }
+        .doral{
+          color:#dd3d34;
+        }
+        .flecha{
+          margin-left: 23px;
+          font-size: 1.8em;
+        }
+      }
+      img{
+        width: 80px;
+      }
+    }
+
+
+    .item.ng-enter-stagger {
+        animation-delay:200ms;
+        animation-duration:0;
+    }
+
+    @for $i from 1 through 10{
+		.animated:nth-child(#{$i}){
+			animation-delay: #{$i * 0.25}s;
+		}
+	}
+
+    .bold{
+        font-weight: bold;
+    }
+}

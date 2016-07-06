@@ -7,37 +7,32 @@
 
     AppController.$inject = ['$scope', '$ionicPopover'];
     function AppController($scope, $ionicPopover) {
-        
+
         $scope.items = [
             {
-                color: "#E47500",
+                color: "#fff",
                 icon: "ion-ionic",
-                title: "Hello Ionic"
+                title: "Tienda"
             },
             {
-                color: "#5AD863",
+                color: "#fff",
                 icon: "ion-social-html5",
-                title: "HTML5"
+                title: "Productos"
             },
             {
-                color: "#F8E548",
+                color: "#fff",
                 icon: "ion-social-javascript",
-                title: "JS"
+                title: "Carrito"
             },
             {
-                color: "#AD5CE9",
+                color: "#fff",
                 icon: "ion-social-sass",
-                title: "Sass"
+                title: "Mi perfil"
             },
             {
-                color: "#3DBEC9",
+                color: "#fff",
                 icon: "ion-social-css3",
-                title: "CSS3"
-            },
-            {
-                color: "#D86B67",
-                icon: "ion-social-angular",
-                title: "Angular"
+                title: "Contacto"
             }
         ];
 
@@ -54,7 +49,7 @@
         $scope.openPopover = function ($event) {
             $scope.popover.show($event);
         };
-        
+
         $scope.$on('$destroy', function() {
             $scope.popover.remove();
         });

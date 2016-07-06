@@ -1,0 +1,60 @@
+.Coupons{
+  .button-bar{
+    padding: 0;margin: 0;
+    a{
+      padding: 0; margin: 0;
+      border: 1px #bdc3c7 solid;
+      border-left: none;
+      text-transform: uppercase;
+      font-size: 0.8em;
+    }
+
+    .borde{
+      border-right: none;
+      background-color: #4479fb;
+      color: #fff;
+      border-radius: 0;
+      border: none;
+    }
+  }
+
+  .content{
+    margin-top: 23px;
+    padding: 10px;
+    border-bottom: 1px #bdc3c7 solid;
+    h1{
+      font-size: 1.6em;
+      font-weight: bold;
+      margin: 0;padding: 0;
+    }
+    p{
+      margin: 0;padding: 0;
+    }
+    span{
+      color:#dd3d34;
+      font-weight: bold;
+    }
+    .date{
+      color:#dd3d34;
+    }
+    .posted{
+      font-weight: bold;
+    }
+    .accion{
+      div{
+        display: inline-block;
+      }
+      button{
+        background-color: #f1cb2f;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        padding: 8px 44px 8px 44px;
+        margin-left: 39px;
+        position: relative;
+        top:-22px;
+      }
+    }
+  }
+}

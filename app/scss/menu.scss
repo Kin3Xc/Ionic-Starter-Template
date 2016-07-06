@@ -1,47 +1,21 @@
 .menu {
-    
-    ion-header-bar{
-        border: none;
-        box-shadow: none;
-        min-height: 150px;
-        color: #fff;
-        padding: 0;
-        
-        .item{
-            background-color: #206AA7;
-            border: none;
-            width: 100%;
-            padding-left: 120px;
-            padding-top: 45px;
-            
-            img{
-                max-width: 100px !important;
-                top: 25% !important;
-                left: 10px !important;
-            }
-            
-            h2, p{
-                font-family: 'Jura';
-            }
-            
-            h2{
-                font-size: 35px;
-                font-weight: bold;
-            }
-            
-            p{
-                font-size: 20px;
-                color: white;
-            }
-        }
+
+    .bar-header{
+      background-color: #000 !important;
+      border: none;
+      background-size: 0;
+
+      .title{
+        color:#fff !important;
+      }
     }
-    
+
     ion-content {
-        top: 150px !important;
-        background: linear-gradient(10deg, #313131, #1c1c1c, #002F57);
-        background-size: 800% 800%;
+        padding: 0;margin: 0;
+        background: #000;
         animation: background 26s ease infinite;
-        
+
+
         .item{
             border: none;
             background-color: transparent;
@@ -50,10 +24,10 @@
                 color: white;
             }
         }
-        
+
         .item.active{
             background-color: white !important;
-            
+
             .item-content{
                 color: black;
                 font-weight: bold;
@@ -61,11 +35,18 @@
         }
     }
 }
-
 .menu-open {
     .menu {
         ion-header-bar img{
             animation-name: flash;
         }
-    }  
+    }
+}
+.bar.bar-dark{
+  background-color: #000 !important;
+}
+
+.tab-nav{
+  background: #000 !important;
+  color: #fff !important;
 }

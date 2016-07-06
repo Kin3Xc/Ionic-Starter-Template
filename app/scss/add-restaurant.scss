@@ -1,0 +1,32 @@
+.Add-restaurant{
+  .content{
+    img{
+      width: 100%;
+    }
+    form{
+      padding: 18px;
+      label{
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      input,textarea{
+        border: 1px #bdc3c7 solid;
+        width: 100%;
+        margin-bottom: 14px;
+      }
+      p{
+        text-align: center;
+      }
+      button{
+        text-align: center;
+        background-color: #f1cb2f;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        padding: 8px 44px 8px 44px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.Redeem{
+  .content{
+    border-bottom: 1px #bdc3c7 solid;
+    div{
+      display: inline-block;
+      margin: 8px;
+    }
+    .logo{
+      div{border: 1px #bdc3c7 solid;padding: 8px;}
+      img{
+        width: 110px;
+        height: 110px;
+      }
+    }
+    p,h2{
+      margin: 0;padding: 0;
+    }
+    h2{
+      font-size: 1.7em;
+      font-weight: bold;
+    }
+  }
+
+  .details{
+    margin-top: 18px;
+    padding: 10px;
+    h2{
+      color: #30967d;
+      margin-bottom: 22px;
+      font-size: 1.8em;
+    }
+    p{
+      margin: 0;padding: 0;
+    }
+    .title{
+      font-size: 1em;
+      font-weight: bold;
+    }
+    .des{
+      color:#dd3d34;
+      font-weight: bold;
+    }
+    .date{
+      color:#dd3d34;
+    }
+    .posted{
+      font-weight: bold;
+    }
+
+    .accion{
+      div{
+        display: inline-block;
+      }
+      button{
+        background-color: #f1cb2f;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        padding: 6px 24px 6px 24px;
+        margin-left: 86px;
+        position: relative;
+        top:-55px;
+      }
+    }
+  }
+}

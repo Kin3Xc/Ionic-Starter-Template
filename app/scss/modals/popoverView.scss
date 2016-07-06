@@ -1,19 +1,41 @@
 .popoverView{
-    background-color: #4E5E6E !important;
+    background-color: #ede9ea !important;
+    text-align: center;
+
+    ion-content{
+      margin-top: 21px !important;
+
+      h3{
+        text-transform: uppercase;
+        font-size: 1em;
+      }
+      p{
+        font-weight: bold;
+        font-size: 1.8em;
+        span{
+          background: #000;
+          color: #fff;
+          width: 80px !important;
+          height: 20px;
+          border-radius: 50%;
+          padding: 4px;
+        }
+      }
+      .pagar{
+        margin-top: 22px;
+        a{
+          text-decoration: none;
+          color: #fff;
+          background-color: #000;
+          padding: 8px 32px 8px 32px;
+          border: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+
     .scroll{
         height: 100%;
-        .slider {
-            position: absolute !important;
-            top: 0 !important;
-            left: 0 !important;
-            bottom: 0 !important;
-            right: 0 !important;
-            text-align: center;
-            
-            .slider-slide img{
-                max-height: 100%;
-                max-width: 100%;
-            }
-        }
     }
+
 }

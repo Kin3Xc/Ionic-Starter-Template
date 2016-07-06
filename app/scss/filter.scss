@@ -1,0 +1,35 @@
+.Filter{
+    text-align: center;
+    margin-top: 40px;
+
+    ul{
+      width: 100% !important;
+      border: none !important;
+      padding: 0;
+      margin: 0;
+
+      li{
+        width: 100%;
+      }
+
+      input{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        border: 1px #6e6e6e solid;
+        padding: 12px;
+        margin-top: 21px;
+      }
+    }
+
+    button{
+      background-color: #f1cb2f;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      padding: 8px 44px 8px 44px;
+      margin-top: 12px;
+    }
+}
