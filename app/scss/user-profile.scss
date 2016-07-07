@@ -1,0 +1,54 @@
+.User-profile{
+  .user{
+    padding: 14px !important;
+    img,button{display: inline-block;}
+    img{
+      width: 140px;
+      height: 130px;
+    }
+    button{
+      text-align: center;
+      background-color: #f1cb2f;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      padding: 8px 24px 8px 24px;
+      margin-left: 18px !important;
+      position: absolute;
+      top: 60px;
+    }
+  }
+
+  .frm{
+    padding: 14px !important;
+    label{
+      text-transform: uppercase;
+      font-weight: bold;
+      float: left;
+      margin-top: 8px !important;
+    }
+    input{
+      text-transform: uppercase;
+      border: 1px #bdc3c7 solid;
+      width: 100%;
+      text-align: center !important;
+      padding: 0;margin: 0;
+    }
+    .acciones{
+      text-align: center;
+      button{
+        text-align: center;
+        background-color: #f1cb2f;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        padding: 8px 34px 8px 34px;
+        margin-top: 34px;
+        width: 100%;
+      }
+    }
+
+  }
+}

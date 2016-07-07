@@ -191,6 +191,42 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
                     templateUrl: "templates/recovery-pass.html"
                 }
             }
+        })
+        .state('app.user-profile', {
+            url: "/user-profile",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/user-profile.html"
+                }
+            }
+        })
+        .state('app.change-password', {
+            url: "/change-password",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/change-password.html"
+                }
+            }
+        })
+        .state('app.contacto', {
+            url: "/contacto",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/contacto.html"
+                }
+            }
+        })
+        .state('app.settings', {
+            url: "/settings",
+            cache: false,
+            views: {
+                viewContent: {
+                    templateUrl: "templates/settings.html"
+                }
+            }
         });
 
 
@@ -213,6 +249,6 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
 
     $urlRouterProvider.otherwise(function ($injector, $location) {
         var $state = $injector.get("$state");
-        $state.go("app.recovery-pass");
+        $state.go("app.settings");
     });
 }]);
